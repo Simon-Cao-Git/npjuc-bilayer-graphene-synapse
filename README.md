@@ -10,8 +10,7 @@ We supplement the experimental findings by investigating the energetics and diff
 ## Methods Overview  
 
 - **DFT Package:** VASP 5.4.4  
-- **Pseudopotentials:** Projector Augmented-Wave (PAW) method with the PBE functional
-  *Note: POTCAR files are not included in this repository, as they are proprietary to VASP.*
+- **Pseudopotentials:** Projector Augmented-Wave (PAW) method with the PBE functional. *Note that POTCAR files are not included in this repository, as they are proprietary to VASP.*
 - **Dispersion Correction:** DFT-D3 (Grimme, zero-damping)  
 - **Calculation Types:**  
   - **Single-point energies** (some after relaxation)  
@@ -51,13 +50,13 @@ Subdirectory names also indicates whether the calculation corresponds to a **sin
 - Number of NEB images  
 - Force convergence thresholds  
 
-For all runs, POSCAR, INCAR, KPOINTS, CONTCAR, OUTCAR (or OUTCAR.gz for larger files) are provided. For the convinience of the reader, for the single point runs relative energies are provided, and for the NEB runs the diffusion path movie.vasp (could be opened in VESTA) and neb.dat which contains the distance between images, the energy of each image, and the force along the band.
+For all runs, POSCAR, INCAR, KPOINTS, CONTCAR, OUTCAR (or OUTCAR.gz for larger files) are provided. In addition, for the convinience of the reader, we also provide: for the single point runs relative energies; for the NEB runs the diffusion path movie.vasp (could be opened in VESTA) and neb.dat which contains the distance between images, the energy of each image, and the force along the band.
 
 ---
 
 ## Citations  
 
-The following foundational methods and codes were used in this work:  
+The following foundational methods and codes were used:  
 
 - Blöchl, P. E. *Projector augmented-wave method.* **Phys. Rev. B** 50, 17953–17979 (1994).  
 - Kresse, G. & Hafner, J. *Ab initio molecular dynamics for liquid metals.* **Phys. Rev. B** 47, 558–561 (1993).  

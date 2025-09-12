@@ -20,6 +20,6 @@ Within the **b** and **c** subdirectories for armchair edge and zigzag edge resp
 
 ## Methods Overview  
 
-- Calculation types are single-point energies
-- The inside edge cases are minimized with a force threshold of 0.01 eV/Å
+- Calculation types are single-point energies.
+- The inside edge cases are minimized with a force threshold of 0.01 eV/Å.
 - The 1 Å, 3 Å, 5 Å cases are single point calculations without minimization, as minimization will bring the Li into the edge.

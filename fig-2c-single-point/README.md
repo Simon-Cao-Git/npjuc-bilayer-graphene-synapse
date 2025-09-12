@@ -8,5 +8,5 @@ Results for (i), (ii), and (iii) are provided in their respective subdirectories
 
 ## Methods Overview  
 
-- Calculation types are single-point energies
-- All 3 cases are minimized with a force threshold of 0.01 eV/Å
+- Calculation types are single-point energies.
+- All 3 cases are minimized with a force threshold of 0.01 eV/Å.
