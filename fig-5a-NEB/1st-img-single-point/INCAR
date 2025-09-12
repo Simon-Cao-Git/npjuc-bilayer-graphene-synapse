@@ -1,0 +1,28 @@
+# General Setup
+  PREC   = NORMAL     # Options: Normal, Medium, High, Low
+  ENCUT  = 400        # Kinetic Energy Cutoff in eV
+  ISTART = 0          # Job: 0-new  1-cont  2-samecut
+  ISPIN  = 2          # Spin Polarize: 1-No 2-Yes
+  LREAL= Auto
+
+# vDW
+IVDW = 11  
+
+# Dipole Correction
+# LDIPOL = .TRUE.
+# IDIPOL = 3
+
+# Electronic Relaxation (SCF)
+  NELM     = 100       # Max Number of Elec Self Cons Steps  
+  EDIFF    = 1.0E-04  # Stopping criteria for ESC
+
+# Ionic Relaxation 
+  EDIFFG   = -1.0E-02    # Stopping criteria for ionic self cons steps
+  NSW      = 200      # Max Number of ISC steps: 0- Single Point
+  IBRION   = 2        # Ionic Relaxation Method: 0-MD 1-qNewton-RaphsonElectronic 2-CG
+  ISIF     = 2        # Stress and Relaxation: 2-Ion 3-cell+ion
+  SIGMA    = 0.1      # Insulators/semiconductors=0.1  metals=0.05 
+  ISMEAR   = 0        # Partial Occupancies for each Orbital
+                      # -5 DOS, -2 from file, -1 Fermi Smear, 0 Gaussian Smear
+# Parallelization
+  NCORE = 4
