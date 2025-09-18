@@ -1,6 +1,6 @@
 ## Figure 2d
 
-CI-NEB calculations showing energy barrier and diffusion path of Li migrating between adjacent intercalation sites within the interlayer region. The energy barrier is low, approximately 0.07 eV, indicating favorable in-plane diffusion once Li is intercalated.
+This figure shows results from a NEB calculation showing energy barrier and diffusion path of Li migrating between adjacent intercalation sites within bilayer graphene's interlayer region. The energy barrier is low, approximately 0.07 eV, indicating favorable in-plane diffusion once Li is intercalated.
 
 - **1st-img-single-point**: Contains the minimization for the first image of the NEB run.  
 - **last-img-single-point**: Contains the minimization for the last image of the NEB run.  

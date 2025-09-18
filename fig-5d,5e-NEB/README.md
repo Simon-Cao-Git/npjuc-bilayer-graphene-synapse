@@ -1,9 +1,9 @@
 ## Figure 5d,e
 
-CI-NEB calculations showing energy barrier and insertion path of Li from 5 Å outside the edge into the bilayer graphene structure for armchair (d) and zigzag (e) edges. The inset illustrates the atomic trajectory along the insertion pathway. Both cases show negligible energy barriers, indicating that edge-driven intercalation is favorable.
+These figures show results from CI-NEB calculations showing energy barrier and insertion path of Li entering from 5 Å outside the edge into the bilayer graphene structure for armchair (d) and zigzag (e) edges. Both cases show negligible energy barriers, indicating that edge-driven intercalation is favorable.
 
-- The results from **5 Å outside the edge** case from **5b,c** is reused as the first image of the NEB runs. 
-- The results from **inside the edge** case from **5b,c** is reused as the last image of the NEB runs.  
+- The single point results from **5 Å outside the edge** case from **5b,c** is reused as the first image of the NEB runs. 
+- The single point results from **inside the edge** case from **5b,c** is reused as the last image of the NEB runs.  
 
 Within the **d** and **e** subdirectories for armchair edge and zigzag edge respectively:
   - **00** and **15** correspond to the first and last images.  
@@ -13,6 +13,6 @@ Within the **d** and **e** subdirectories for armchair edge and zigzag edge resp
 
 ## Methods Overview  
 
-- Calculation type is CI-NEB.
+- Calculation type is CI(climbing image)-NEB.
 - A total of 14 images are used.
 - NEB force threshold is set to 0.05 eV/Å.

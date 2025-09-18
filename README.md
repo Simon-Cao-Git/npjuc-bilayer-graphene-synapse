@@ -10,11 +10,11 @@ We supplement the experimental findings by investigating the energetics and diff
 ## Methods Overview  
 
 - **DFT Package:** VASP 5.4.4  
-- **Pseudopotentials:** Projector Augmented-Wave (PAW) method with the PBE functional. *Note that POTCAR files are not included in this repository, as they are proprietary to VASP.*
+- **Pseudopotentials:** Projector Augmented-Wave (PAW) method with the PBE functional. *Note that POTCAR pseudopotential files are not included in this repository, as they are proprietary to VASP.*
 - **Dispersion Correction:** DFT-D3 (Grimme, zero-damping)  
 - **Calculation Types:**  
-  - **Single-point energies** (some after relaxation)  
-  - **Climbing-Image Nudged Elastic Band (CI-NEB)** calculations for diffusion barriers  
+  - **Single-point energies** calculations (some after relaxation) for relative energy comparison  
+  - **Nudged Elastic Band (NEB)** calculations for diffusion pathways and barriers  
 
 ---
 
@@ -25,25 +25,24 @@ All calculations were carried out using a plane-wave kinetic energy cutoff of **
 The Brillouin zone was sampled using Γ-centered grids.  
 - **Bilayer graphene (3 × 3 supercell):** 15 × 15 × 1 mesh  
 - **Bilayer graphene (6 × 6 supercell):** 4 × 4 × 1 mesh  
-- **Bilayer graphene Nanoribbons:** 8 Γ-centered *k*-points along the periodic axis and Γ-only sampling in the transverse directions  
+- **Bilayer graphene Nanoribbons:** 8 *k*-points along the periodic axis and Γ-only sampling in the transverse directions  
 
 *Note: The exact sampling details for each calculation can also be found in the `KPOINTS` files within the subdirectories.*  
 
-### Single-Point Calculations  
-1. Whenever possible, structures were first relaxed prior to single-point evaluations.  
+### For Single-Point Calculations:  
+1. Whenever possible, structures were first relaxed prior to single-point evaluations before final converged energies are extracted and compared. 
 2. Structural relaxations employed the **conjugate gradient (CG)** algorithm, with all atomic positions relaxed until the residual forces were **≤ 0.01 eV/Å**.  
-3. Final single-point energies were extracted from these minimized structures.  
 
-### CI-NEB Calculations  
-1. Both **initial** and **final** states were minimized to the same **≤ 0.01 eV/Å** force threshold.  
-2. CI-NEB calculations were then performed to determine diffusion pathways and energy barriers.  
+### For NEB Calculations:
+1. Both **initial** and **final** states were relaxed to the same **≤ 0.01 eV/Å** force threshold.  
+2. NEB calculations were then performed to determine diffusion pathways and energy barriers.  
 3. Depending on the complexity of the pathway, different NEB force thresholds were used, but in all cases convergence was achieved with forces **≤ 0.05 eV/Å**.   
 
 ---
 
 ## Repository Structure  
 
-Subdirectories are organized according to the figures presented in the paper.  
+The subdirectories in this repository are organized according to the figures presented in the paper.  
 
 Subdirectory names also indicates whether the calculation corresponds to a **single-point** run or a **NEB** (nudged elastic band) run, and includes a brief description for the focus of the figure and additional details such as:
 - relative energies
