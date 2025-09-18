@@ -30,13 +30,14 @@ The Brillouin zone was sampled using Γ-centered grids.
 *Note: The exact sampling details for each calculation can also be found in the `KPOINTS` files within the subdirectories.*  
 
 ### For Single-Point Calculations:  
-1. Whenever possible, structures were first relaxed prior to single-point evaluations before final converged energies are extracted and compared. 
+1. Whenever possible, structures were first relaxed prior to single-point calculations before total energies are extracted and compared. 
 2. Structural relaxations employed the **conjugate gradient (CG)** algorithm, with all atomic positions relaxed until the residual forces were **≤ 0.01 eV/Å**.  
 
 ### For NEB Calculations:
 1. Both **initial** and **final** states were relaxed to the same **≤ 0.01 eV/Å** force threshold.  
 2. NEB calculations were then performed to determine diffusion pathways and energy barriers.  
 3. Depending on the complexity of the pathway, different NEB force thresholds were used, but in all cases convergence was achieved with forces **≤ 0.05 eV/Å**.   
+4. For pathways with a single transition state, climbing-image NEB is used to find the energy barrier more accurately. For pathways with multiple transition states, normal NEB is used as climbing-image NEB does not work with multiple transition states.
 
 ---
 
