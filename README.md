@@ -1,7 +1,8 @@
 # Computational Workflow for Li Diffusion in Bilayer Graphene
 
 This repository documents the computational work underlying the paper:  
-**“Artificial synapse with tunable dynamic range for neuromorphic computing with ion intercalated bilayer graphene”** (npj *Unconventional Computing*). A citation to our paper will be added here once the final publication details are available. 
+
+He, Y., (Simon) Cao, P., Hashemkhani, S. *et al*. Artificial synapse with tunable dynamic range for neuromorphic computing with ion intercalated bilayer graphene. *npj Unconv. Comput.* **2**, 28 (2025). https://doi.org/10.1038/s44335-025-00042-4
 
 We supplement the experimental findings by investigating the energetics and diffusion properties of lithium (Li) in bilayer graphene using **density functional theory (DFT)**.  
 
